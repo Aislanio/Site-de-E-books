@@ -1,0 +1,158 @@
+.contaier{
+  height: 100%;
+  width:100%;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+  
+  
+  background:linear-gradient(45deg, #0093E9 0%,#80D0C7,#E0C3FC 100%);
+  background-size:400% 400%;
+  animation: color 15s infinite;
+  
+}
+p{
+  position: relative;
+  top:-250px;
+  left: 100px;
+  font-size:3.1rem ;
+  width:50%;
+  white-space: nowrap
+}
+#icon{
+  width:100%;
+  max-width: 160px;
+  position: relative;
+    top: -240px;
+    left: 80px;
+}
+ #image_padrao {
+  width:100%;
+  max-width: 500px;
+  position: relative;
+    right: 100px;
+  
+
+}
+.contaier a h2{
+  position: relative;
+    right:170px;
+  font-size: 3rem;
+  color:black;
+  white-space: nowrap;
+}
+
+
+/*Animaçao*/
+@keyframes color{
+  0%{
+    background-position: 0% 50% ;
+  }
+  50%{
+    background-position:100% 50% ;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+/*Responsividade*/
+@media screen and (max-width:1244px){
+ 
+  #icon{
+    left:400px;
+    top:-300px;
+  }
+  p{
+    top:-320px;
+    left:420px;
+    
+  }
+  #image_padrao{
+    right:170px;
+    max-width: 500px;
+  
+  }
+  
+  .contaier a h2{
+    left:-100px;
+  
+  }
+}
+@media screen and (max-width:768px){
+  html{
+    font-size:70%;
+  }
+  .contaier{
+    flex-direction: column;
+  }
+  #icon{
+      top:-320px;
+      left: -230px;
+  }
+  p{
+      top:-420px;
+      left: 60px;
+    font-size:3.5rem ;
+  }
+  #image_padrao{
+    order: -1;
+    
+    max-width:380px ;
+      left: 20px;
+      top: 100px;
+  }
+  .contaier a h2{
+   top:-80px;
+    left:30px;
+  }
+ 
+}
+
+@media screen and (max-width:425px){
+  html{
+    font-size:60%;
+  }
+  #icon{
+    max-width: 130px;
+      left: -100px;
+  }
+  #image_padrao{
+    max-width:380px ;
+      left: 10px;
+  }
+  .contaier a h2{
+   top:-80px;
+    left:30px;
+    color:red;
+  }
+  p{
+    top:-400px;
+    left: 80px;
+}
+ 
+}
+@media screen and (max-width:320px){
+  html{
+    font-size:50%;
+  }
+  #icon{
+    max-width: 130px;
+      left: -90px;
+  }
+  #image_padrao{
+    max-width:380px ;
+      left: 5px;
+  }
+  .contaier a h2{
+   top:-80px;
+    left:10px;
+    color:red;
+  }
+  p{
+    top:-400px;
+    left: 80px;
+}
+ 
+}
