@@ -89,3 +89,21 @@ Usamos a tag `<picture>` para que as imagens sejam responsivas.
 ```
 
 Sempre que possível, usar SVG ao invés de JPG, PNG
+
+```html
+    <section class="cards">
+                <div class="card">
+                    <img src="img/img_Ebooks/ebook1.png" alt=""> 
+                    <h3>Javascript O guia definitivo </h3>
+                    <p>David Flanagan</p>
+                </div>
+                
+                <div class="card">
+                    <img src="img/img_Ebooks/ebook1.png" alt=""> 
+                    <h3>Javascript O guia definitivo </h3>
+                    <p>David Flanagan</p>
+                </div>
+            
+    
+            </section>
+```
