@@ -47,8 +47,38 @@ p{
   white-space: nowrap;
 }
 
-
+.text{
+  position: relative;
+  top: 200px;
+  right: 790px;
+  color: rgba(255,255,255, .75) ;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.animation_dig{
+  animation: fader 3s infinite linear;
+  
+}
 /*Animaçao*/
+
+
+@keyframes fader {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @keyframes color{
   0%{
     background-position: 0% 50% ;
@@ -60,6 +90,7 @@ p{
     background-position: 0% 50%;
   }
 }
+
 /*Responsividade*/
 @media screen and (max-width:1244px){
  

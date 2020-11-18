@@ -105,5 +105,30 @@ Sempre que possível, usar SVG ao invés de JPG, PNG
                 </div>
             
     
+
             </section>
+```
+```html
+<div class="filho">
+                <h3>Porgramação</h3>
+                <section class="cards">
+                   
+                    <div class="card">
+                        <img src="img/img_Ebooks/ebook1.png" alt=""> 
+                        <h3 class="titulo">Javascript O guia definitivo </h3>
+                        <p class="resum">David Flanagan</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="filho">
+                <h3>Porgramação</h3>
+                <section class="cards  mark">
+                    <div class="card">
+                        <img src="img/img_Ebooks/ebook1.png" alt=""> 
+                        <h3 class="titulo">Javascript O guia definitivo </h3>
+                        <p class="resum">David Flanagan</p>
+                    </div>
+                </section>
+            </div>
 ```
