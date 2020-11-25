@@ -36,7 +36,7 @@ p{
   max-width: 500px;
   position: relative;
     right: 100px;
-  
+ transition: all 3s; 
 
 }
 .contaier a h2{
@@ -90,7 +90,6 @@ p{
     background-position: 0% 50%;
   }
 }
-
 /*Responsividade*/
 @media screen and (max-width:1244px){
  
