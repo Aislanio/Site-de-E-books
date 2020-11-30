@@ -36,8 +36,6 @@ p{
   max-width: 500px;
   position: relative;
     right: 100px;
- transition: all 3s; 
-
 }
 .contaier a h2{
   position: relative;
@@ -103,42 +101,44 @@ p{
     
   }
   #image_padrao{
-    right:170px;
-    max-width: 500px;
+    position: relative;
+    right:119px;
+    max-width: 390px;
   
   }
-  
   .contaier a h2{
-    left:-100px;
-  
+    left:-170px;
   }
+  
 }
 @media screen and (max-width:768px){
   html{
-    font-size:70%;
+    font-size:80%;
   }
   .contaier{
     flex-direction: column;
   }
   #icon{
-      top:-320px;
-      left: -230px;
+    z-index: -100;
+    opacity: 0;
+    display:none;
   }
   p{
-      top:-420px;
-      left: 60px;
-    font-size:3.5rem ;
+    z-index: -100;
+    opacity: 0;
+    display:none;
   }
   #image_padrao{
     order: -1;
     
-    max-width:380px ;
+    max-width:390px ;
       left: 20px;
       top: 100px;
   }
   .contaier a h2{
    top:-80px;
     left:30px;
+    margin-top:230px ;
   }
  
 }
@@ -147,10 +147,6 @@ p{
   html{
     font-size:60%;
   }
-  #icon{
-    max-width: 130px;
-      left: -100px;
-  }
   #image_padrao{
     max-width:380px ;
       left: 10px;
@@ -158,34 +154,30 @@ p{
   .contaier a h2{
    top:-80px;
     left:30px;
-    color:red;
+    margin-top:210px ;
   }
-  p{
-    top:-400px;
-    left: 80px;
 }
- 
-}
-@media screen and (max-width:320px){
+@media screen and (max-width:375px){
   html{
-    font-size:50%;
-  }
-  #icon{
-    max-width: 130px;
-      left: -90px;
+    font-size:60%;
   }
   #image_padrao{
-    max-width:380px ;
+    max-width:350px ;
       left: 5px;
   }
   .contaier a h2{
    top:-80px;
     left:10px;
-    color:red;
+
   }
-  p{
-    top:-400px;
-    left: 80px;
-}
  
+}
+@media screen and (max-width:320px){
+  html{
+    font-size:55%;
+  }
+  #image_padrao{
+    max-width:310px ;
+    
+  }
 }
