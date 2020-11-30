@@ -2,14 +2,14 @@
 Meu Primeiro site de E-books que eu to criando para melhora minha Responsividade e meu css e javascript 
 
 
-## CSS Units
+## CSS Unidades
 
 Unidades de medidas do CSS
 
 Layout Fixo
 `px` - Pixels
 
-Layout Fluido
+Layout Responsivo
 `%` - Porcentagem
 `auto` - Automática
 `vh` - Viewport Height
@@ -23,7 +23,7 @@ Texto fluidos
 `em` - multiplicado pelo pai 
 `rem` - multiplicado pelo root
 
-## CSS Media Queries 
+## CSS Consultas de mídia 
 
 No HTMl eu coloco a seguinte tag meta
 
