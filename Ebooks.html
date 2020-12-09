@@ -23,9 +23,9 @@
                 <li><a href="#">Reporte um erro</a></li>
                 <div class="sear">
                     
-                    <select>
-                        <option value="">Ebooks</option>
-                        <option value="">Categoria</option>
+                    <select id="box">
+                        <option class="ebooks" >Ebooks</option>
+                        <option class="categoria">Categoria</option>
                     </select>
                     <input type="text" placeholder="Buscar Ebooks" name="Buscar" id="filtro-nome">
                 </div>
@@ -37,16 +37,19 @@
     </header>
     <main>
         <div class="pai">
-            <div class="filho">
-                <h3>Porgramação</h3>
+            <div><!--E uma div que vai sofrer umas alteraçoes do pai para que a section não sofra e fique bagunçada -->
                 <section class="cards">
                     <div class="card">
                         <img src="img/img_Ebooks/ebook1.png" alt=""> 
                         <h3 class="titulo">Javascript O guia definitivo </h3>
                         <p class="resum">David Flanagan</p>
+                        <p>Categoria:<span class="Categoria">Porgramação</span></p>
+                        <p>Linguagem:<span class="linguagem">Português</span></p>
                     </div>
                 </section>
             </div>
+                
+        
         </div>
     </main>
     <div class="page">
@@ -63,6 +66,8 @@
         </div>
         <a download target="_blank" href="#" class="dow">download</a>
     </div>
+    <div class="stars" ></div>
+
     <script src="scripts/Ebooks.js"></script>
 </body>
 </html>

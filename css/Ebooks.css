@@ -1,4 +1,7 @@
-
+body{
+  background:#ececec;
+  animation: fundo 10s infinite;
+}
 header{
     width:100%;
     height: 90px;
@@ -12,7 +15,7 @@ header nav {
     display: flex;
      justify-content: center;
      align-items: center;
-    background: #66b9df;
+    background:#eff3f3;
     
 }
 
@@ -53,7 +56,7 @@ header nav ul li a {
     white-space: nowrap;
 }
 header nav ul li:hover{
-    background-color:#e0faff; 
+    background-color:#eff3f3; 
     transition:   background-color 600ms ;
 }
 
@@ -66,9 +69,6 @@ main{
     display: flex;
      flex-direction: column;
 }
-.filho:not(:first-child) {
-    margin-top:100px ;
-}
 .pai{
     width:100%;
     height: 100vh;
@@ -76,20 +76,18 @@ main{
      flex-direction: column;
 
 }
-.filho h3{
-    font-size:3rem ;
-}
+
 .cards {
     width:100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 30px;
+    grid-gap: 50px;
 }
 
 .card{
-    width:18%;
-    height: 90%;
+    width:25%;
+    height: 100%;
     min-width: 200px;
     min-height: 300px;
     margin: 1%;
@@ -98,7 +96,8 @@ main{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-    box-shadow:0 0 5px 0px #e2e2e2;
+     text-align: center;
+    box-shadow:0 0 5px 0px #c2bfbf;
     cursor: pointer;
 
 }
@@ -112,10 +111,13 @@ main{
     max-width: 162px;
 }
 .card h3{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    
 }
 .card p{
-    font-size: 1rem;
+  border-top: 1px solid #DCB6A7;
+    font-size: 1.1rem;
+    white-space: nowrap;
 }
 /*card de dowload*/
 .page{
@@ -171,6 +173,7 @@ main{
     top: 5px;
     cursor: pointer;
 }
+
 /* Responsividade */
 @media screen and (max-width:1024px){
     html{

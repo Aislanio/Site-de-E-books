@@ -1,4 +1,4 @@
-
+const o = 1;
 const pai = document.querySelector(".pai")
 /*seçoes*/
 const sectionCards = document.querySelector(".cards");
@@ -6,141 +6,89 @@ const sectionCards1 = document.querySelector(".mark");
 
 
 /*script*/ 
+let op = 0;
 const card = document.querySelector(".card");
 
-const videos = [
+const ebooks= [
   {
     img:"img/img_Ebooks/ebook1.png",
     title: "JavaScript O Guia Definitiovo",
     autor: "David Flanagan",
-    id: "prog/JavaScript O Guia Definitivo_v2.pdf"
+    Categoria: "programação",
+    linguagem: "Portugues",
+    id: "JavaScript O Guia Definitivo_v2.pdf"
   },
   {
     img:"img/img_Ebooks/ebook2.png",
     title: "Apostila Matlab",
+    Categoria: "programação",
+    linguagem: "Portugues",
     autor: "Alex Jenaro Becker,...",
-    id: "prog/Apostila_Matlab.pdf"
+    id: "Apostila_Matlab.pdf"
   },
   {
     img:"img/img_Ebooks/ebook3.png",
     title: "Programaçãoem JAVA ",
+    Categoria: "programação",
+    linguagem: "Portugues",
     autor: "Daniela Barreiro Claro,...",
-    id: "prog/0031.pdf"
+    id: "0031.pdf"
   },
   {
     img:"img/img_Ebooks/ebook4.png",
     title: "Introdução JavaScript",
+    Categoria: "programação",
+    linguagem: "Portugues",
     autor: "Prof. Vilson Heck Junior",
-    id: "prog/04_introducao_javaScript.pdf"
+    id: "04_introducao_javaScript.pdf"
   },
   {
-    img:"img/img_Ebooks/ebook1.png",
-    title: "JavaScript O Guia Definitiovo",
-    autor: "David Flanagan",
-    id: "prog/JavaScript O Guia Definitivo_v2.pdf"
+    img:"img/img_Ebooks/ebook5.png",
+    title: "Algoritimos parte 1",
+    Categoria: "programação",
+    linguagem: "Portugues",
+    autor: "Universidade do Rio... ",
+    id: "algoritmos_parte1.pdf"
   },
   {
-    img:"img/img_Ebooks/ebook2.png",
-    title: "Apostila Matlab",
-    autor: "Alex Jenaro Becker,...",
-    id: "prog/Apostila_Matlab.pdf"
+    img:"img/img_Ebooks/ebook6.png",
+    title: "Algoritmos e Programação",
+    Categoria: "programação",
+    linguagem: "Portugues",
+    autor: "Adolfo José e Francisco",
+    id: "algoritmos-e-programacao.pdf"
   },
   {
-    img:"img/img_Ebooks/ebook3.png",
-    title: "Programaçãoem JAVA ",
-    autor: "Daniela Barreiro Claro,...",
-    id: "prog/0031.pdf"
+    img:"img/img_Ebooks/ebook7.png",
+    title: "Apostila de PHP",
+    Categoria: "programação",
+    linguagem: "Portugues",
+    autor: "Bruno Rodrigues",
+    id: "apostila_php.pdf"
   },
   {
-    img:"img/img_Ebooks/ebook4.png",
-    title: "Introdução JavaScript",
-    autor: "Prof. Vilson Heck Junior",
-    id: "prog/04_introducao_javaScript.pdf"
+    img:"img/img_Ebooks/ebook7.png",
+    title: "Apostila de PHP",
+    Categoria: "programação",
+    linguagem: "Portugues",
+    autor: "Bruno Rodrigues",
+    id: "apostila-html-css-javascript.pdf"
   },
-  {
-    img:"img/img_Ebooks/ebook1.png",
-    title: "JavaScript O Guia Definitiovo",
-    autor: "David Flanagan",
-    id: "prog/JavaScript O Guia Definitivo_v2.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook2.png",
-    title: "Apostila Matlab",
-    autor: "Alex Jenaro Becker,...",
-    id: "prog/Apostila_Matlab.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook3.png",
-    title: "Programaçãoem JAVA ",
-    autor: "Daniela Barreiro Claro,...",
-    id: "prog/0031.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook4.png",
-    title: "Introdução JavaScript",
-    autor: "Prof. Vilson Heck Junior",
-    id: "prog/04_introducao_javaScript.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook1.png",
-    title: "JavaScript O Guia Definitiovo",
-    autor: "David Flanagan",
-    id: "prog/JavaScript O Guia Definitivo_v2.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook2.png",
-    title: "Apostila Matlab",
-    autor: "Alex Jenaro Becker,...",
-    id: "prog/Apostila_Matlab.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook3.png",
-    title: "Programaçãoem JAVA ",
-    autor: "Daniela Barreiro Claro,...",
-    id: "prog/0031.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook4.png",
-    title: "Introdução JavaScript",
-    autor: "Prof. Vilson Heck Junior",
-    id: "prog/04_introducao_javaScript.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook1.png",
-    title: "JavaScript O Guia Definitiovo",
-    autor: "David Flanagan",
-    id: "prog/JavaScript O Guia Definitivo_v2.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook2.png",
-    title: "Apostila Matlab",
-    autor: "Alex Jenaro Becker,...",
-    id: "prog/Apostila_Matlab.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook3.png",
-    title: "Programaçãoem JAVA ",
-    autor: "Daniela Barreiro Claro,...",
-    id: "prog/0031.pdf"
-  },
-  {
-    img:"img/img_Ebooks/ebook4.png",
-    title: "Introdução JavaScript",
-    autor: "Prof. Vilson Heck Junior",
-    id: "prog/04_introducao_javaScript.pdf"
-  },
-  
   
 ];
-videos.map(video => {
+ebooks.map(video => {
   const card_clone = card.cloneNode(true);
   card_clone.querySelector("img").src = video.img;
   card_clone.querySelector(".titulo").innerHTML = video.title;
+  card_clone.querySelector(".Categoria").innerHTML = video.Categoria;
+  card_clone.querySelector(".linguagem").innerHTML = video.linguagem;
   card_clone.querySelector(".resum").innerHTML =video.autor;
   card_clone.setAttribute("id", video.id);
   sectionCards.appendChild(card_clone);
   sectionCards.style.opacity = "1";
 });
+
+
 
 const modal = document.querySelector(".page");
 const cards = [...document.querySelectorAll(".cards .card")];
@@ -164,20 +112,6 @@ document.querySelector(".close_page").addEventListener("click", () => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //fixando header
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -191,59 +125,66 @@ function myFunction() {
 card.remove();
 
 
-//campode de pesquiar com filtro
-document.querySelector("option").addEventListener("click", () => {
-  const comboCidades = document.querySelector("select");
-console.log("O texto é: " + comboCidades.options[comboCidades.selectedIndex].text);
-} );
 
-/*
-const filtro = document.getElementById('filtro-nome');
-const tabela = document.querySelector(".pai")
-filtro.onkeyup = function() {
-    const nomeFiltro = filtro.value;
-    for (const i = 1; i < tabela.length; i++) {
-        const conteudoCelula = tabela.innerText;
-        const corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-        tabela.rows[i].style.display = corresponde ? '' : 'none';
-    }
-};
 
-*/
+//Filtro para pesquisas por ebooks
 const filtro = document.getElementById('filtro-nome');
 const tabelamae = document.querySelectorAll(".titulo")
+const tabelamae_categoria = document.querySelectorAll(".Categoria")
 
 filtro.onkeyup = function() {
-  const nomefiltro = filtro.value.toLowerCase();
+  const nomefiltro = filtro.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   for (var i = 0; i < tabelamae.length; ++i) {
-//  const conteudoCelula = tabela[i].textContent;
+//  const conteudoCelula = tabela[i].textContent;]
+  const box = document.querySelector("#box");
+  const selecionado = box.options[box.selectedIndex].text;
 
-  const tabela = tabelamae[i].textContent.toLowerCase();
+  if(selecionado === "Ebooks"){
+   //pesquisar por ebooks
+   
+  const tabela = tabelamae[i].textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
   const corresponde = tabela.indexOf(nomefiltro) >= 0;
+  
 
-  //tabela[i].style.display = corresponde ? '' : 'none';
   if(corresponde === false){
+  
     const pai = tabelamae[i].parentNode;
     pai.style.display = "none";
   } else if(corresponde === true){
     const pai = tabelamae[i].parentNode;
     pai.style.display = "";
-  }
+  };
    if(nomefiltro.value == ""){
-      document.querySelectorAll(".cad").style.display = ""
-    }
-
+    document.querySelectorAll(".card").style.display = "";
+  };
  
+  }else if (selecionado === "Categoria"){ //Pesquisar por categorias
+    
 
+    
+  const tabela = tabelamae_categoria[i].textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  
+  const corresponde = tabela.indexOf(nomefiltro) >= 0;
+  
 
-console.log("tabela/nome");
- console.log(tabela);
- console.log("corresponde");
- console.log(corresponde);
- console.log("filho");
- console.log(tabelamae[i]);
- console.log("pai");
- console.log(tabelamae[i].parentNode);
+  //tabela[i].style.display= corresponde ? '' : 'none';
+  if(corresponde === false){
+  
+    const pai = tabelamae[i].parentNode;
+    pai.style.display = "none";
+  } else if(corresponde === true){
+    const pai = tabelamae[i].parentNode;
+    pai.style.display = "";
+  };
+   if(nomefiltro.value == ""){
+    document.querySelectorAll(".card").style.display = "";
+  };
  
+  }
+
 }
 }
+
+
+
