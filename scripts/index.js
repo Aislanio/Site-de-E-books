@@ -21,6 +21,10 @@ setInterval(() => {
         break;
     case 5:
         img.src = "img/exemplos/index/undraw_Notebook_tlkl.svg";
+        tipoUsuario++
+        break;
+    case 6:
+        img.src = "img/exemplos/index/undraw_book_lover_mkck.svg";
         tipoUsuario = 1;
         break;
 }

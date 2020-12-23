@@ -1,145 +1,138 @@
 const o = 1;
-const pai = document.querySelector(".pai")
+const pai = document.querySelector(".pai");
 /*seçoes*/
 const sectionCards = document.querySelector(".cards");
 const sectionCards1 = document.querySelector(".mark");
 
-
-/*script*/ 
-let op = 0;
 const card = document.querySelector(".card");
 
-const ebooks= [
+const ebooks = [
   {
-    img:"img/img_Ebooks/ebook1.png",
+    img: "img/img_Ebooks/ebook1.png",
     title: "JavaScript O Guia Definitiovo",
     autor: "David Flanagan",
     Categoria: "programação",
-    linguagem: "Portugues",
-    id: "JavaScript O Guia Definitivo_v2.pdf"
+    linguagem: "Português",
+    id: "JavaScript O Guia Definitivo_v2.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook2.png",
+    img: "img/img_Ebooks/ebook2.png",
     title: "Apostila Matlab",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Alex Jenaro Becker,...",
-    id: "Apostila_Matlab.pdf"
+    id: "Apostila_Matlab.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook3.png",
+    img: "img/img_Ebooks/ebook3.png",
     title: "Programaçãoem JAVA ",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Daniela Barreiro Claro,...",
-    id: "0031.pdf"
+    id: "0031.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook4.png",
+    img: "img/img_Ebooks/ebook4.png",
     title: "Introdução JavaScript",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Prof. Vilson Heck Junior",
-    id: "04_introducao_javaScript.pdf"
+    id: "04_introducao_javaScript.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook5.png",
+    img: "img/img_Ebooks/ebook5.png",
     title: "Algoritimos parte 1",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Universidade do Rio... ",
-    id: "algoritmos_parte1.pdf"
+    id: "algoritmos_parte1.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook6.png",
+    img: "img/img_Ebooks/ebook6.png",
     title: "Algoritmos e Programação",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Adolfo José e Francisco",
-    id: "algoritmos-e-programacao.pdf"
+    id: "algoritmos-e-programacao.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook7.png",
+    img: "img/img_Ebooks/ebook7.png",
     title: "Apostila de PHP",
     Categoria: "programação",
-    linguagem: "Portugues",
+    linguagem: "Português",
     autor: "Bruno Rodrigues",
-    id: "apostila_php.pdf"
+    id: "apostila_php.pdf",
   },
   {
-    img:"img/img_Ebooks/ebook7.png",
-    title: "Apostila de PHP",
+    img: "img/img_Ebooks/ebook8.png",
+    title: "Apostila de html,css e js",
     Categoria: "programação",
-    linguagem: "Portugues",
-    autor: "Bruno Rodrigues",
-    id: "apostila-html-css-javascript.pdf"
+    linguagem: "Português",
+    autor: "Caelum",
+    id: "apostila-html-css-javascript.pdf",
   },
-  
+
 ];
-ebooks.map(video => {
+ebooks.map((video) => {
   const card_clone = card.cloneNode(true);
   card_clone.querySelector("img").src = video.img;
   card_clone.querySelector(".titulo").innerHTML = video.title;
   card_clone.querySelector(".Categoria").innerHTML = video.Categoria;
   card_clone.querySelector(".linguagem").innerHTML = video.linguagem;
-  card_clone.querySelector(".resum").innerHTML =video.autor;
+  card_clone.querySelector(".resum").innerHTML = video.autor;
   card_clone.setAttribute("id", video.id);
   sectionCards.appendChild(card_clone);
   sectionCards.style.opacity = "1";
 });
 
-
-
 const modal = document.querySelector(".page");
 const cards = [...document.querySelectorAll(".cards .card")];
- 
-cards.forEach(card => {
+
+cards.forEach((card) => {
   card.addEventListener("click", () => {
-    modal.querySelector(
-      ".dow"
-    )
-    
-    .href = `ebooks/${card.getAttribute("id")}`;
-    modal.classList.add("active")
+    modal.querySelector(".dow").href = `ebooks/${card.getAttribute("id")}`;
+    modal.classList.add("active");
     document.querySelector("body").style.overflow = "hidden";
   });
 });
 
 document.querySelector(".close_page").addEventListener("click", () => {
-   modal.classList.remove("active");
-   modal.querySelector(".dow").href = ``;
+  modal.classList.remove("active");
+  modal.querySelector(".dow").href = ``;
   document.querySelector("body").style.overflow = "initial";
 });
 
-
 //fixando header
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 function myFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector("header").style.position = "fixed"
+    document.querySelector("header").style.position = "fixed";
   } else {
-    document.querySelector("header").style.position = ""
-  }  
-};
+    document.querySelector("header").style.position = "";
+  }
+}
 
 card.remove();
 
-
-
-
 //Filtro para pesquisas por ebooks
-const filtro = document.getElementById('filtro-nome');
-const tabelamae = document.querySelectorAll(".titulo")
-const tabelamae_categoria = document.querySelectorAll(".Categoria")
+const filtro = document.getElementById("filtro-nome");
+const tabelamae = document.querySelectorAll(".titulo");
+const tabelamae_categoria = document.querySelectorAll(".Categoria");
 
-filtro.onkeyup = function() {
-  const nomefiltro = filtro.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+filtro.onkeyup = function () {
+  const nomefiltro = filtro.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
   for (var i = 0; i < tabelamae.length; ++i) {
-//  const conteudoCelula = tabela[i].textContent;]
-  const box = document.querySelector("#box");
-  const selecionado = box.options[box.selectedIndex].text;
+    //  const conteudoCelula = tabela[i].textContent;]
 
-  if(selecionado === "Ebooks"){
+    const box = document.querySelector("#box");
+    const selecionado = box.options[box.selectedIndex].text;
+
+    if(selecionado === "Ebooks"){
    //pesquisar por ebooks
    
   const tabela = tabelamae[i].textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -184,7 +177,4 @@ filtro.onkeyup = function() {
   }
 
 }
-}
-
-
-
+};
