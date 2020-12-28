@@ -4,7 +4,7 @@ Meu Primeiro site de E-books que eu to criando para melhora minha Responsividade
 
 
 # Fazendo um campo de pesquisa so com javascript puro
-   Eu peguei como base o modelo de pesquisar com javascript a diferença que e para tabelas você pode ver um demo <a href=" http://jsfiddle.net/utluiz/YBLu6/"> clique aqui</a>
+   Eu peguei como base o modelo de pesquisar com javascript a diferença que e para tabelas você pode ver um demo <a href="http://jsfiddle.net/utluiz/YBLu6/"> clique aqui</a>
 
    
  Para isso vamo cria um input para pegar o nome do ebook,coloca assim no html :
