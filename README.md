@@ -7,7 +7,7 @@ Meu Primeiro site de E-books que eu to criando para melhora minha Responsividade
    Eu peguei como base o modelo de pesquisar com javascript a diferença que e para tabelas você pode ver um demo <a href="http://jsfiddle.net/utluiz/YBLu6/"> clique aqui</a>
 
    
- Para isso vamo cria um input para pegar o nome do ebook,coloca assim no html :
+ Então vamos la Para isso vamo cria um input para pegar o nome do ebook,coloca assim no html :
  ```html
  <input type="text" placeholder="Buscar Ebooks" name="Buscar" id="filtro-nome">
  ```
