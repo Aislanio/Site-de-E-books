@@ -147,6 +147,6 @@ filtro.onkeyup = function () {
     };
   };  
 ```
-O meu código so fica diferente por causar que eu coloque o parametro de pesquisar por ebooks ou por categoria.
+O meu código so fica diferente por causa que eu coloque o parametro de pesquisar por ebooks ou por categoria.
 
 Então o seu campo de pesquisa esta pronto =).
