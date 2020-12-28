@@ -149,4 +149,4 @@ filtro.onkeyup = function () {
 ```
 O meu código so fica diferente por causar que eu coloque o parametro de pesquisar por ebooks ou por categoria.
 
-entao o seu campo de pesquisa esta pronto =).
+Então o seu campo de pesquisa esta pronto =).
