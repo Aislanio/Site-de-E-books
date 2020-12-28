@@ -127,21 +127,21 @@ filtro.onkeyup = function () {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
   for (var i = 0; i < tabelamae.length; ++i) {
-    //  const conteudoCelula = tabela[i].textContent;]
+    
 
     const box = document.querySelector("#box");
     const selecionado = box.options[box.selectedIndex].text;
 
     if(selecionado === "Ebooks"){
    //pesquisar por ebooks
-   
+
   const tabela = tabelamae[i].textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
+      console.log(tabela);
   const corresponde = tabela.indexOf(nomefiltro) >= 0;
-  
-
+      console.log(corresponde);
   if(corresponde === false){
-  
+    const pai2 = tabela.parentNode;
+    console.log(pai2);
     const pai = tabelamae[i].parentNode;
     pai.style.display = "none";
   } else if(corresponde === true){
