@@ -147,6 +147,6 @@ filtro.onkeyup = function () {
     };
   };  
 ```
-O meu código so fica diferente por causa que eu coloque o parametro de pesquisar por ebooks ou por categoria pode ver uma demo no meu <a href="https://musing-galileo-2f4ac1.netlify.app/"> site, clique aqui =) </a>
+O meu código so fica diferente por causa que eu coloquei  o parametro de pesquisar por ebooks ou por categoria pode ver uma demo no meu <a href="https://musing-galileo-2f4ac1.netlify.app/"> site, clique aqui =) </a>
 
 Então o seu campo de pesquisa esta pronto =).
